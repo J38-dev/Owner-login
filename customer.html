@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer App - Order Calculator</title>
+  <link rel="stylesheet" href="customer-style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="images/ken-logo.png" alt="Business Logo" class="logo">
+    <h1>Customer Order Calculator</h1>
+  </header>
+
+  <main class="main-container">
+    <section class="customer">
+      <div class="form">
+        <select id="orderSelect">
+          <!-- Options loaded from owner list -->
+        </select>
+        <button id="addToOrderBtn">Add to Order</button>
+      </div>
+
+      <table id="orderList">
+        <thead>
+          <tr>
+            <th>Service/Product</th>
+            <th>Price</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td id="orderTotal">0</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <button id="bookNow">Book via WhatsApp</button>
+    </section>
+  </main>
+
+  <script src="customer-script.js"></script>
+</body>
+</html>
